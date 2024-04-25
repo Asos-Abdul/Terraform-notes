@@ -1,0 +1,13 @@
+<h1>todo api overview </h1>
+
+## Commands
+- "cat .\docker-compose.yaml"
+- "docker compose build"
+- "docker compose up -d"
+- "curl http://127.0.0.1:8080"
+- "curl http://todo-api.spkane.org:8080"
+- "docker compose down" - when ready to close
+- "curl -i http://todo-api.spkane.org:8080/ -X POST -H 'Content-type application/spkane.todo-list.v1+json' -d '{"description":"go skiing", "completed":false}'" - this did not work for me and used the below instead
+- "curl -i http://127.0.0.1:8080/ -d "{\"description\":\"go\",\"completed\":false}" -H 'Content-Type: application/spkane.todo-list.v1+json'
+- "curl -i http://127.0.0.1:8080/1 -X PUT -H 'Content-Type: application/spkane.todo-list.v1+json' -d '{"description":"go shopping","completed":true}'"
+- "curl -i http://127.0.0.1:8080/1 -X DELETE -H 'Content-Type: application/spkane.todo-list.v1+json'"
